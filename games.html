@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Game Hub - Games</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Games</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="games.html">Games</a>
+      <a href="profile.html">Profile</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="guessGame">
+      <h2>Guess the Number</h2>
+      <p>Pick a number between 1 and 10:</p>
+      <input type="number" id="guessInput" min="1" max="10">
+      <button onclick="playGuess()">Submit</button>
+      <p id="guessResult"></p>
+      <p id="guessResult"></p>
+      <button id="resetGuess" style="display:none;">Reset Game</button>
+    </section>
+
+    <section id="clickGame">
+      <h2>Click Counter Challenge</h2>
+      <button id="clickButton">Click Me!</button>
+      <audio id="clickSound" src="click.mp3"></audio>
+      <p id="clickCount">Clicks: 0</p>
+    </section>
+
+    <section id="quizGame">
+      <h2>Trivia Quiz</h2>
+      <p>What is the capital of France?</p>
+      <button onclick="checkAnswer('Paris')">Paris</button>
+      <button onclick="checkAnswer('London')">London</button>
+      <button onclick="checkAnswer('Berlin')">Berlin</button>
+      <p id="quizResult"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Mini Game Hub</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

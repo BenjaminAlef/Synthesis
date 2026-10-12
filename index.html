@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Game Hub - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Mini Game Hub</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="games.html">Games</a>
+      <a href="profile.html">Profile</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Personalize Your Experience</h2>
+      <form id="userForm">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" required>
+
+        <label for="favoriteGame">Choose a game:</label>
+        <select id="favoriteGame" required>
+          <option value="">--Select--</option>
+          <option value="guess">Guess the Number</option>
+          <option value="click">Click Counter</option>
+          <option value="quiz">Trivia Quiz</option>
+        </select>
+
+        <button type="submit">Save</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Mini Game Hub</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
